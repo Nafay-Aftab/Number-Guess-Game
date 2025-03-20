@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: radial-gradient(circle, #1a1a1a, #000000);
+    color: #ffcc00;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 4px solid #ff007f;
+    box-shadow: 0px 0px 15px #ff007f;
+    max-width: 500px;
+    width: 90vw;
+}
+
+h1 {
+    font-size: 20px;
+    color: #ff007f;
+    text-shadow: 0px 0px 10px #ff007f;
+}
+
+p {
+    font-size: 14px;
+}
+
+input {
+    background: black;
+    color: #00ffff;
+    font-size: 16px;
+    border: 3px solid #00ffff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background: #ff007f;
+    color: white;
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px #ff007f;
+}
+
+#submit {
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ff33a8;
+    box-shadow: 0px 0px 20px #ff33a8;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+#attempts {
+    font-size: 14px;
+    color: #ffcc00;
+}
+
+#history {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.restart-btn {
+    background: red;
+    display: none;
+    box-shadow: 0px 0px 20px red;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 16px;
+    }
+    
+    p, #message, #attempts, #history {
+        font-size: 12px;
+    }
+    
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Number Guessing Game</h1>
+        <p>Guess a number between 1 and 100</p>
+        <input type="number" id="guess" placeholder="Enter your guess" />
+        <button id="submit">Check Guess</button>
+        <p id="message"></p>
+        <p id="attempts">Attempts Left: 10</p>
+        <p id="history">Previous Guesses: None</p>
+        <button id="restart" class="restart-btn">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
