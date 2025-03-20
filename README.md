@@ -10,8 +10,8 @@ A fun **Guess the Number** game where the player tries to guess a randomly gener
 ✅ **Minimalist & interactive UI** 🖥️  
 
 ## 📸 Preview  
-![Guess the Number Screenshot](![image](https://github.com/user-attachments/assets/17553c73-225f-4fbe-93cf-65a26c1d6fec)
-)  
+[image](https://github.com/user-attachments/assets/17553c73-225f-4fbe-93cf-65a26c1d6fec)
+ 
 
 ## 🔗 Live Demo  
 🔗 **View Live Demo:** (https://number-guessing-game-app.netlify.app/) 🚀  
